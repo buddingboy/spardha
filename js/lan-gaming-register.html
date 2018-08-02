@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Lan Gaming Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Know the wonderful organising team of the Spardha - Annual sports festival of IIT (BHU) Varanasi.">
+        <meta name="keywords" content="Spardha 2015 Organising Team, Spardha 2015 Organiser">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" href="css/hover.css">
+
+        <link href='http://fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+        <!--[if lt IE 9]>
+         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="img/favicon.ico">     
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+
+
+        <script type="text/javascript">
+            function updateCsTeamSizeInput(val) {
+                document.getElementById('CsTeamSizeInput').value = val;
+            }
+            ;
+
+            function updateDotaTeamSizeInput(val) {
+                document.getElementById('DotaTeamSizeInput').value = val;
+            }
+        </script>
+
+
+        <!-- CSS code -->
+
+        <style type="text/css">                               
+
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+                font-family: 'Cuprum', sans-serif;
+                background: #DBDBDB center center repeat fixed;
+            }
+
+            a.team-type{color: #325736}
+
+            /* use special fonts in certain elements */
+            h1,h2 {
+                text-transform:uppercase;
+                font-family: 'Cuprum', sans-serif;
+                font-weight: 700;
+            }            
+
+            .lead,.btn,.navbar a {
+                text-transform:uppercase;
+                font-family: 'Dosis', sans-serif;
+                font-weight: 400;
+            }
+
+            h4      {
+                text-transform:uppercase;
+                font-weight: 400;
+            }
+
+            .fp-tableCell {padding-top: 70px}    
+
+            .form-horizontal .form-group {
+                margin-right: 0px; 
+                margin-left: 0px;
+            }   
+
+            .boundry {display: inline-block; border: 1px solid #808080; border-radius: 10px; }
+
+            @media(max-width:767px) 
+            {.boundry {display: block; }}
+
+            a.fixed-img:hover {  cursor: auto;}
+
+
+            .game-name{
+                margin-right: 10px;
+            }
+
+            input[type=checkbox]
+            {
+                /* Double-sized Checkboxes */
+                -ms-transform: scale(1.4); /* IE */
+                -moz-transform: scale(1.4); /* FF */
+                -webkit-transform: scale(1.4); /* Safari and Chrome */
+                -o-transform: scale(1.4); /* Opera */
+                padding: 10px;
+                margin: 0px 5px;
+            }
+
+            input[type=range] {
+                -webkit-appearance: none;
+                background-color: silver;
+                width: 100px;
+                height:10px;
+                display: inline!important;
+            }
+
+            input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                background-color: #666;
+                opacity: 0.5;
+                width: 10px;
+                height: 18px;
+            }
+
+            input#CsTeamSizeInput, input#DotaTeamSizeInput  {
+                width: 25px;
+                padding: 0 5px;
+                display: inline;
+                margin-top: 3px;
+            }   
+
+
+        </style>
+    </head>
+
+    <!-- HTML code -->
+
+    <body>         
+
+        <div class="navbar alt navbar-fixed-top" id="nav1"></div>
+
+        <div class="fullpage">
+
+            <div class="section" id="section0">
+                <div class="container">
+                    <div class="col-md-12 text-center">
+                        <h1 class="title">Lan Gaming Registration</h1>
+                    </div>
+
+                    <form class="form-horizontal" role="form" method  ="post" action = "database.php" >
+
+                        <div class="col-md-8 col-md-offset-2 col-sm-" style="margin-bottom: 130px;">
+                            <div class="boundry">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Name:</label>
+                                        <input type="text" class="form-control" id="name" name = "name" placeholder="Enter Your Name" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="college">College:</label>
+                                        <input type="text" class="form-control" id="college" name = "college"  placeholder="Enter Your College Name" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" name = "email" placeholder="Enter Your Email" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="mobile">Mobile:</label>    
+                                        <input type="text" class="form-control" id="mobile" name = "mobile" placeholder="Enter Your Mobile No." required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="team-name">Team Name:</label>    
+                                        <input type="text" class="form-control" id="team-name" name = "team-name" placeholder="Enter Your Team Name" required>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="games">Register for:</label>   
+                                        <input type="checkbox" class="games" name="opt[]" value="cs"><span class="game-name">CS GO</span>
+                                        <input type="checkbox" class="games" name="opt[]" value="dota"><span class="game-name">DOTA</span>
+                                        <input type="checkbox" class="games" name="opt[]" value="fifa"><span class="game-name">FIFA'15</span>
+                                        <input type="checkbox" class="games" name="opt[]" value="nfs"><span class="game-name">NFS</span>
+                                    </div>
+                                </div> 
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="team-size">Team Size:</label>
+                                        <div>                                       
+                                            <span class="">CS GO</span>
+                                            <input type="range" name="rangeInput" min="1" max="9" onchange="updateCsTeamSizeInput(this.value);">                                                       
+                                            <input type="text" id="CsTeamSizeInput" value="">
+                                            </br>
+                                            <span class="">DOTA</span>
+                                            <input type="range" name="rangeInput" min="1" max="9" onchange="updateDotaTeamSizeInput(this.value);">                                                       
+                                            <input type="text" id="DotaTeamSizeInput" value=""> 
+                                        </div>                                
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-sm-12">
+                                    <div class="form-group ">
+                                        <button type="submit"  name = "submit" class="btn btn-default btn-success btn-block"><i class="fa fa-paper-plane"></i> &nbsp; Register for Lan Gaming</button>  
+                                    </div>
+                                </div>   
+
+                            </div>
+                        </div> 
+
+                    </form>         
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div id="footer"></div>
+
+        <a class="fixed-img" href="http://www.spardha.co.in"></a>
+
+
+
+        <script src="js/navigation.js"></script>  
+
+        <script type='text/javascript' src="js/jquery.min.js"></script>
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
+
+        <script type='text/javascript'>
+                                            $(document).ready(function () {
+                                                $('#fullpage').fullpage({
+                                                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+                                                    scrollOverflow: true
+                                                });
+                                            });
+        </script>
+
+
+
+
+
+
+    </body>
+</html>

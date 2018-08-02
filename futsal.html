@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Futsal Registration | Informals</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Know the wonderful organising team of the Spardha - Annual sports festival of IIT (BHU) Varanasi.">
+        <meta name="keywords" content="Spardha 2015 Organising Team, Spardha 2015 Organiser">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" href="css/hover.css">
+
+        <link href='http://fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+        <!--[if lt IE 9]>
+         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="img/favicon.ico">     
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+
+
+        <!-- CSS code -->
+
+        <style type="text/css">                               
+
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+                font-family: 'Cuprum', sans-serif;
+                background: #DBDBDB center center repeat fixed;
+            }
+
+            a.team-type{color: #325736}
+
+            /* use special fonts in certain elements */
+            h1,h2 {
+                text-transform:uppercase;
+                font-family: 'Cuprum', sans-serif;
+                font-weight: 700;
+            }            
+
+            .lead,.btn,.navbar a {
+                text-transform:uppercase;
+                font-family: 'Dosis', sans-serif;
+                font-weight: 400;
+            }
+
+            h4      {
+                text-transform:uppercase;
+                font-weight: 400;
+            }
+
+            .fp-tableCell {padding-top: 70px}    
+
+            .form-horizontal .form-group {
+                margin-right: 0px; 
+                margin-left: 0px;
+            }   
+
+            .boundry {display: inline-block; border: 1px solid #808080; border-radius: 10px; }
+
+            @media (max-width:767px) 
+            {.boundry {display: block; }}
+
+            a.fixed-img:hover {  cursor: auto;}
+
+
+            .bg-para{
+                background: url('img/sky.jpg') center center no-repeat;
+                background-size: cover;
+            } 
+
+            .bright-bg{
+                background-color: rgba(255, 255, 255, 0.47);
+            }       
+
+            .form-group input[type=checkbox] {
+                -ms-transform: scale(1.4);
+                -moz-transform: scale(1.4);
+                -webkit-transform: scale(1.4);
+                -o-transform: scale(1.4);
+                padding: 10px;
+                margin: 0px 5px;                
+            }
+            
+            .no-padding{
+                padding: 0!important;
+            }
+            
+             @media (max-width:767px){
+                .mobile-no-padding {
+                padding: 0px!important;
+                }
+            }
+            
+        </style>
+    </head>
+
+    <!-- HTML code -->
+
+    <body>         
+
+        <div class="navbar alt navbar-fixed-top" id="nav1"></div>
+
+        <div class="fullpage">
+
+            <div class="section bg-para" id="section0">
+                <div class="container ">
+                    
+                    <div class="col-md-12 text-center">
+                        
+
+                        <!--<span class="bg-info text-left" style="padding: 10px; border-radius: 5px; display: inline-block; font-size: 1.5em; margin-bottom: 10px;">
+                            Get Rs. 100 discount by Registering before 28-10-2015.</br>
+                            Fees for Parasailing / Hot Air balloon is Rs. 600 for each.
+                        </span>-->
+
+                    </div>
+
+                    <form class="form-horizontal" role="form" method  ="post" action = "database.php" >
+
+                        <div class="col-md-8 col-md-offset-2 col-sm-12" style="margin-bottom: 130px;">
+                            <div class="boundry bright-bg">
+                                <h3 class="text-center">Registration Form  for Futsal</h3>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="team-name">Team Name:</label>
+                                        <input type="text" class="form-control" id="team-name" name = "team-name" placeholder="Enter Your Name" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="college">Team Representative Name:</label>
+                                        <input type="text" class="form-control" id="r-name" name = "Representative Name"  placeholder="Enter Your College Name" required>
+                                    </div>
+                                </div>
+
+                                <span style="display: block; padding-left: 15px; font-size: 1.4em;">Team Members Details</span>
+
+                                <div class="col-md-12 col-sm-12">
+                                     <label class="control-label" for="members">Member1:</label>
+                                    <div class="form-group">                                       
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="name-m1" name = "name-m1" placeholder="Enter Member-1 Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 mobile-no-padding">
+                                            <input type="text" class="form-control" id="college-m1" name = "college-m1" placeholder="Enter Member-1 College Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="mobile-m1" name = "mobile-m1" placeholder="Enter Member-1 Mobile Number" required>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div class="col-md-12 col-sm-12">
+                                     <label class="control-label" for="members">Member2:</label>
+                                    <div class="form-group">                                       
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="name-m2" name = "name-m2" placeholder="Enter Member-2 Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 mobile-no-padding">
+                                            <input type="text" class="form-control" id="college-m2" name = "college-m2" placeholder="Enter Member-2 College Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="mobile-m2" name = "mobile-m2" placeholder="Enter Member-2 Mobile Number" required>
+                                        </div>
+                                    </div>
+                                </div>             
+
+                                <div class="col-md-12 col-sm-12">
+                                     <label class="control-label" for="members">Member3:</label>
+                                    <div class="form-group">                                       
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="name-m3" name = "name-m3" placeholder="Enter Member-3 Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 mobile-no-padding">
+                                            <input type="text" class="form-control" id="college-m3" name = "college-m3" placeholder="Enter Member-3 College Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="mobile-m3" name = "mobile-m3" placeholder="Enter Member-3 Mobile Number" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12">
+                                     <label class="control-label" for="members">Member4:</label>
+                                    <div class="form-group">                                       
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="name-m4" name = "name-m4" placeholder="Enter Member-4 Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 mobile-no-padding">
+                                            <input type="text" class="form-control" id="college-m4" name = "college-m4" placeholder="Enter Member-4 College Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="mobile-m4" name = "mobile-m4" placeholder="Enter Member-4 Mobile Number" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12">
+                                     <label class="control-label" for="members">Member5:</label>
+                                    <div class="form-group">                                       
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="name-m5" name = "name-m5" placeholder="Enter Member-5 Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 mobile-no-padding">
+                                            <input type="text" class="form-control" id="college-m5" name = "college-m5" placeholder="Enter Member-5 College Name" required>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 no-padding">
+                                            <input type="text" class="form-control" id="mobile-m5" name = "mobile-m5" placeholder="Enter Member-5 Mobile Number" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Team Representative Email Id:</label>
+                                        <input type="email" class="form-control" id="email" name = "email" placeholder="Enter Your Email" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group ">
+                                        <button type="submit"  name = "submit" class="btn btn-default btn-success btn-block"><i class="fa fa-paper-plane"></i> &nbsp; Register</button>  
+                                    </div>
+                                </div>   
+
+                            </div>
+                        </div> 
+
+                    </form>         
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div id="footer"></div>
+
+        <a class="fixed-img" href="http://www.spardha.co.in"></a>
+
+
+
+        <script src="js/navigation.js"></script>  
+
+        <script type='text/javascript' src="js/jquery.min.js"></script>
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
+
+        <script type='text/javascript'>
+            $(document).ready(function () {
+                $('#fullpage').fullpage({
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+                    scrollOverflow: true
+                });
+            });
+        </script>
+
+
+
+
+
+
+    </body>
+</html>

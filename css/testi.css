@@ -1,0 +1,23 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+#block{padding:0 6px 10px;margin:0 auto;}
+#block h3{background:url(img/h3.png) no-repeat center;color:#dd3c04;font-size:13px;font-weight:normal;text-align:center;text-transform:uppercase;margin-bottom:17px;}
+#block .photo img{max-width:105px;max-height:105px;position:absolute; padding: 3px!important; border-radius: 60px;}
+#block .photo img.photo{left:0;}
+#block p.content{font-size: 16px; font-style:italic;line-height:24px;padding-left:19px;margin-left:121px;position:relative;overflow:hidden;}
+#block p.content span.laquo{background:url(img/laquo.png) no-repeat;width:14px;height:11px;position:absolute;left:0;top:4px;display:block;}
+#block p.content span.raquo{background:url(img/raquo.png) no-repeat right 4px;width:13px;height:15px;padding-left:4px;display:inline-block;}
+#block .sign{text-align:right;}
+#block .sign a{color:#577302;font-family:Arial,sans-serif;font-size:14px;text-decoration:none;}
+#block .sign a:hover{text-decoration:underline;}
+#block .sign p{color:#5a5a5a;font-size:14px;line-height:15px;margin-top:2px;}
+
+
+
+
+
+
